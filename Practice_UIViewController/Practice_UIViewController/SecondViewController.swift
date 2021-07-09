@@ -13,7 +13,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func goToViewController(_ sender: Any) {
+    @IBAction func didTapPushVCButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     

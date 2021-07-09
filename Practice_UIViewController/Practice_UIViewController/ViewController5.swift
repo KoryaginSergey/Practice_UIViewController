@@ -13,7 +13,7 @@ class ViewController5: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func goToViewController4TouchUpInside(_ sender: Any) {
+    @IBAction func didTapPushVC4Button(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     

@@ -14,7 +14,7 @@ class ThirdViewController: UIViewController {
 
     }
     
-    @IBAction func goToSecondViewControllerTouchUpInside(_ sender: Any) {
+    @IBAction func didTapPushVC2Button(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     

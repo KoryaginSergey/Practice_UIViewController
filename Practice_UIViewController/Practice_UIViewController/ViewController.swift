@@ -13,22 +13,40 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func goToSecondViewControllerTouchUpInside(_ sender: Any) {
-        let secondViewController = storyboard?.instantiateViewController(identifier: "SecondViewController") as! SecondViewController
-        navigationController?.pushViewController(secondViewController, animated: true)
+    @IBAction func didTapPushVC2Button(_ sender: Any) {
+        guard let secondVC = storyboard?.instantiateViewController(identifier: String(describing: SecondViewController.self))
+                as? SecondViewController else {return}
+        navigationController?.pushViewController(secondVC, animated: true)
     }
     
-    @IBAction func goToThirdViewControllerTouchUpInside(_ sender: Any) {
-        let thirdViewController = storyboard?.instantiateViewController(identifier: "ThirdViewController") as! ThirdViewController
+    @IBAction func didTapPushVC3Button(_ sender: Any) {
+        guard let thirdViewController = storyboard?.instantiateViewController(identifier: String(describing: ThirdViewController.self))
+                as? ThirdViewController else {return}
         navigationController?.present(thirdViewController, animated: true, completion: nil)
     }
     
-    @IBAction func goToViewController4TouchUpInside(_ sender: Any) {
-        let viewController4 = storyboard?.instantiateViewController(identifier: "ViewController4") as! ViewController4
+    @IBAction func didTapPushVC4Button(_ sender: Any) {
+        guard let viewController4 = storyboard?.instantiateViewController(identifier: String(describing: ViewController4.self))
+                as? ViewController4 else {return}
         let navController = UINavigationController(rootViewController: viewController4)
         navController.modalPresentationStyle = .fullScreen
         navigationController?.present(navController, animated: true, completion: nil)
     }
-    
+
 }
+
+//extension UIViewController
+//{
+//    class func instantiateFromStoryboard(_ name: String = "Main") -> Self
+//    {
+//        return instantiateFromStoryboardHelper(name)
+//    }
+//
+//    fileprivate class func instantiateFromStoryboardHelper<T>(_ name: String) -> T
+//    {
+//        let storyboard = UIStoryboard(name: name, bundle: nil)
+//        let controller = storyboard.instantiateViewController(withIdentifier: String(describing: self)) as! T
+//        return controller
+//    }
+//}
 

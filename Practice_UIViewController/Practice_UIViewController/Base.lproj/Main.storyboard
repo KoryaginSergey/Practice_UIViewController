@@ -40,7 +40,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToSecondViewControllerTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKt-qh-bk8"/>
+                                    <action selector="didTapPushVC2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lqa-2B-SZr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujI-lX-nAD">
@@ -51,7 +51,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToThirdViewControllerTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Io-jh-bbN"/>
+                                    <action selector="didTapPushVC3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXd-HI-pcc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAe-75-iKB">
@@ -62,7 +62,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToViewController4TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmZ-sV-LNX"/>
+                                    <action selector="didTapPushVC4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7k-YA-JYV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,7 +108,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToViewControllerTouchUpInside:" destination="YAi-vB-DUJ" eventType="touchUpInside" id="qaZ-QH-9fU"/>
+                                    <action selector="didTapPushVCButton:" destination="YAi-vB-DUJ" eventType="touchUpInside" id="zWd-dB-pJE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDa-JH-6RQ">
@@ -122,7 +122,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToViewController5TouchUpInside:" destination="YAi-vB-DUJ" eventType="touchUpInside" id="9QF-sg-w5k"/>
+                                    <action selector="didTapPushVC5Button:" destination="YAi-vB-DUJ" eventType="touchUpInside" id="lft-e8-PVU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -162,7 +162,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToViewController4TouchUpInside:" destination="gBP-Xv-5Z2" eventType="touchUpInside" id="7Lm-zD-RHo"/>
+                                    <action selector="didTapPushVC4Button:" destination="gBP-Xv-5Z2" eventType="touchUpInside" id="eWo-Ls-Rf9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -198,7 +198,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToViewController:" destination="CRY-Bg-5ws" eventType="touchUpInside" id="Ggl-gI-lnT"/>
+                                    <action selector="didTapPushVCButton:" destination="CRY-Bg-5ws" eventType="touchUpInside" id="gOQ-gb-4tv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -234,7 +234,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToSecondViewControllerTouchUpInside:" destination="wDk-gb-CeS" eventType="touchUpInside" id="ike-x5-kfI"/>
+                                    <action selector="didTapPushVC2Button:" destination="wDk-gb-CeS" eventType="touchUpInside" id="U2b-vc-ziB"/>
                                 </connections>
                             </button>
                         </subviews>

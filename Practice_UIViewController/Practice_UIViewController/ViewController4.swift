@@ -13,12 +13,12 @@ class ViewController4: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func goToViewController5TouchUpInside(_ sender: Any) {
+    @IBAction func didTapPushVC5Button(_ sender: Any) {
         let fiveViewController = storyboard?.instantiateViewController(identifier: "ViewController5") as! ViewController5
         navigationController?.pushViewController(fiveViewController, animated: true)
     }
     
-    @IBAction func goToViewControllerTouchUpInside(_ sender: Any) {
+    @IBAction func didTapPushVCButton(_ sender: Any) {
         navigationController?.dismiss(animated: true, completion: nil)
     }
     

@@ -64,19 +64,27 @@
 		840B530C26982F7D002AB90C /* Practice_UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				840B533C26989990002AB90C /* ViewControllers */,
 				840B530D26982F7D002AB90C /* AppDelegate.swift */,
 				840B530F26982F7D002AB90C /* SceneDelegate.swift */,
-				840B531126982F7D002AB90C /* ViewController.swift */,
-				840B53232698391E002AB90C /* SecondViewController.swift */,
-				840B5327269844C9002AB90C /* ThirdViewController.swift */,
-				840B532A26984516002AB90C /* ViewController4.swift */,
-				840B532E26984524002AB90C /* ViewController5.swift */,
 				840B531326982F7D002AB90C /* Main.storyboard */,
 				840B531626982F80002AB90C /* Assets.xcassets */,
 				840B531826982F80002AB90C /* LaunchScreen.storyboard */,
 				840B531B26982F80002AB90C /* Info.plist */,
 			);
 			path = Practice_UIViewController;
+			sourceTree = "<group>";
+		};
+		840B533C26989990002AB90C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				840B531126982F7D002AB90C /* ViewController.swift */,
+				840B53232698391E002AB90C /* SecondViewController.swift */,
+				840B5327269844C9002AB90C /* ThirdViewController.swift */,
+				840B532A26984516002AB90C /* ViewController4.swift */,
+				840B532E26984524002AB90C /* ViewController5.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
