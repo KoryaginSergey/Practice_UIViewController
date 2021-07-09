@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YUa-Lq-hFz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5eT-Zc-3lW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,10 +8,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="bng-BW-eDM">
+            <objects>
+                <tabBarController id="5eT-Zc-3lW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8RV-Md-vNY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YUa-Lq-hFz" kind="relationship" relationship="viewControllers" id="LhK-c1-wTo"/>
+                        <segue destination="NNR-Vf-xvJ" kind="relationship" relationship="viewControllers" id="UEh-Ip-RzZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8d-10-OUw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2188" y="315"/>
+        </scene>
+        <!--Title-->
         <scene sceneID="bha-hP-Blu">
             <objects>
-                <navigationController id="YUa-Lq-hFz" sceneMemberID="viewController">
+                <navigationController title="Title" id="YUa-Lq-hFz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First VC" id="YSv-Fw-5Qf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DSp-B5-7kP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,7 +41,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UgP-Mw-iy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1041" y="94"/>
+            <point key="canvasLocation" x="-1042" y="94"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -33,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4of-Th-XZt">
-                                <rect key="frame" x="100" y="248" width="214" height="54.5"/>
+                                <rect key="frame" x="100" y="248" width="214" height="42"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Push VC2">
@@ -44,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujI-lX-nAD">
-                                <rect key="frame" x="100" y="442.5" width="214" height="55"/>
+                                <rect key="frame" x="100" y="419" width="214" height="42"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Modal VC3">
@@ -55,7 +74,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAe-75-iKB">
-                                <rect key="frame" x="100" y="637.5" width="214" height="54.5"/>
+                                <rect key="frame" x="100" y="601" width="214" height="42"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Modal VC4">
@@ -89,6 +108,23 @@
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="93.75"/>
         </scene>
+        <!--Fourth VC-->
+        <scene sceneID="r94-aF-Vvb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHG-x3-vSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="NNR-Vf-xvJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fourth VC" id="1Vx-8U-FdK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J0B-Xp-7cs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YAi-vB-DUJ" kind="relationship" relationship="rootViewController" id="PRC-sv-WtT"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1042" y="787"/>
+        </scene>
         <!--ViewController4-->
         <scene sceneID="sfv-Hg-7LC">
             <objects>
@@ -98,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12V-hY-5js">
-                                <rect key="frame" x="100" y="622" width="214" height="70"/>
+                                <rect key="frame" x="100" y="573" width="214" height="70"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="3NE-fE-Gy3"/>
