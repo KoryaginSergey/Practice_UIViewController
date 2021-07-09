@@ -11,16 +11,10 @@ class ViewController4: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.title = "Fourth VC"
     }
     
     @IBAction func didTapPushVC5Button(_ sender: Any) {
         let fiveViewController = storyboard?.instantiateViewController(identifier: "ViewController5") as! ViewController5
         navigationController?.pushViewController(fiveViewController, animated: true)
     }
-    
-    @IBAction func didTapPushVCButton(_ sender: Any) {
-        navigationController?.dismiss(animated: true, completion: nil)
-    }
-    
 }

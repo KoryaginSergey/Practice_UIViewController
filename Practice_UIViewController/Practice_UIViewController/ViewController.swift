@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.title = "First VC"
     }
 
     @IBAction func didTapPushVC2Button(_ sender: Any) {
@@ -25,15 +24,6 @@ class ViewController: UIViewController {
                 as? ThirdViewController else {return}
         navigationController?.present(thirdViewController, animated: true, completion: nil)
     }
-    
-    @IBAction func didTapPushVC4Button(_ sender: Any) {
-        guard let viewController4 = storyboard?.instantiateViewController(identifier: String(describing: ViewController4.self))
-                as? ViewController4 else {return}
-        let navController = UINavigationController(rootViewController: viewController4)
-        navController.modalPresentationStyle = .fullScreen
-        navigationController?.present(navController, animated: true, completion: nil)
-    }
-
 }
 
 

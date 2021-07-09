@@ -73,32 +73,17 @@
                                     <action selector="didTapPushVC3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXd-HI-pcc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAe-75-iKB">
-                                <rect key="frame" x="100" y="601" width="214" height="42"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Modal VC4">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapPushVC4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7k-YA-JYV"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="HAe-75-iKB" firstAttribute="height" secondItem="ujI-lX-nAD" secondAttribute="height" id="95b-Ny-xyK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ujI-lX-nAD" secondAttribute="bottom" constant="352" id="Gze-P6-WNy"/>
                             <constraint firstItem="4of-Th-XZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="KpT-eB-2Ol"/>
-                            <constraint firstItem="HAe-75-iKB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="NHN-Yz-08Y"/>
                             <constraint firstItem="ujI-lX-nAD" firstAttribute="height" secondItem="4of-Th-XZt" secondAttribute="height" id="Pae-Qv-I98"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HAe-75-iKB" secondAttribute="bottom" constant="170" id="ajO-NY-9Os"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ujI-lX-nAD" secondAttribute="trailing" constant="100" id="cFh-pb-bkA"/>
                             <constraint firstItem="ujI-lX-nAD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="eIc-cm-Fuj"/>
-                            <constraint firstItem="HAe-75-iKB" firstAttribute="top" secondItem="ujI-lX-nAD" secondAttribute="bottom" constant="140" id="fGS-Gq-dNz"/>
                             <constraint firstItem="ujI-lX-nAD" firstAttribute="top" relation="lessThanOrEqual" secondItem="4of-Th-XZt" secondAttribute="bottom" constant="140" id="gdz-y4-WMs"/>
                             <constraint firstItem="4of-Th-XZt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="khK-lg-p6n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HAe-75-iKB" secondAttribute="trailing" constant="100" id="mCB-D9-mD8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4of-Th-XZt" secondAttribute="trailing" constant="100" id="yzJ-zY-xHD"/>
                         </constraints>
                     </view>
@@ -111,7 +96,6 @@
         <!--Fourth VC-->
         <scene sceneID="r94-aF-Vvb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHG-x3-vSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="NNR-Vf-xvJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Fourth VC" id="1Vx-8U-FdK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J0B-Xp-7cs">
@@ -122,6 +106,7 @@
                         <segue destination="YAi-vB-DUJ" kind="relationship" relationship="rootViewController" id="PRC-sv-WtT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHG-x3-vSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1042" y="787"/>
         </scene>
@@ -133,20 +118,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12V-hY-5js">
-                                <rect key="frame" x="100" y="573" width="214" height="70"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="3NE-fE-Gy3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Close">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapPushVCButton:" destination="YAi-vB-DUJ" eventType="touchUpInside" id="zWd-dB-pJE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDa-JH-6RQ">
                                 <rect key="frame" x="100" y="413" width="214" height="70"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -166,11 +137,8 @@
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="SfO-cl-tV4" firstAttribute="trailing" secondItem="DDa-JH-6RQ" secondAttribute="trailing" constant="100" id="238-Wl-OTh"/>
-                            <constraint firstItem="12V-hY-5js" firstAttribute="leading" secondItem="SfO-cl-tV4" secondAttribute="leading" constant="100" id="R4y-kY-mzt"/>
-                            <constraint firstItem="SfO-cl-tV4" firstAttribute="trailing" secondItem="12V-hY-5js" secondAttribute="trailing" constant="100" id="ZPX-Ao-KQ2"/>
                             <constraint firstItem="DDa-JH-6RQ" firstAttribute="centerY" secondItem="0uI-OE-CNV" secondAttribute="centerY" id="dbG-HU-uee"/>
                             <constraint firstItem="DDa-JH-6RQ" firstAttribute="leading" secondItem="SfO-cl-tV4" secondAttribute="leading" constant="100" id="h70-XV-hDx"/>
-                            <constraint firstItem="SfO-cl-tV4" firstAttribute="bottom" secondItem="12V-hY-5js" secondAttribute="bottom" constant="170" id="yez-ho-V5M"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a1p-Jb-Dqo"/>
