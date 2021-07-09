@@ -75,9 +75,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="OWl-20-UI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="AU2-CR-XSC"/>
-                            <constraint firstItem="OWl-20-UI0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="CPx-jv-X4M"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWl-20-UI0" secondAttribute="trailing" constant="50" id="iav-pX-xed"/>
+                            <constraint firstItem="OWl-20-UI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="DXB-OI-MjJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWl-20-UI0" secondAttribute="trailing" constant="50" id="Mxa-F2-Wpq"/>
+                            <constraint firstItem="OWl-20-UI0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="byC-uu-gmV"/>
                         </constraints>
                     </view>
                 </viewController>
