@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func simpleAlertButton(_ sender: Any) {
-        let alert = UIAlertController.init(title: "Sign out?", message: "You can always access your content by signing back in", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController.init(title: "Sign out?", message: "You can always access your content by signing back in", preferredStyle: .alert)
         let alertCancelAction = UIAlertAction.init(title: "Cancel", style: .default) { (action) in}
         let alertSignOutAction = UIAlertAction.init(title: "Sign out", style: .default) { (action) in}
         alert.addAction(alertCancelAction)
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func simpleActionSheetButton(_ sender: Any) {
-        let alert = UIAlertController.init(title: "Title", message: "Please Select an Option", preferredStyle: UIAlertController.Style.actionSheet)
+        let alert = UIAlertController.init(title: "Title", message: "Please Select an Option", preferredStyle: .actionSheet)
         let alertApproveAction = UIAlertAction.init(title: "Approve", style: .default) { (action) in}
         let alertEditAction = UIAlertAction.init(title: "Edit", style: .default) { (action) in}
         let alertDeleteAction = UIAlertAction.init(title: "Delete", style: .destructive) { (action) in}
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func alertWithMoreThan2Button(_ sender: Any) {
-        let alert = UIAlertController.init(title: "Alert", message: "Alert with more than 2 buttons", preferredStyle: UIAlertController.Style.actionSheet)
+        let alert = UIAlertController.init(title: "Alert", message: "Alert with more than 2 buttons", preferredStyle: .actionSheet)
         let alertDefaultAction = UIAlertAction.init(title: "Default", style: .default) { (action) in}
         let alertCancelAction = UIAlertAction.init(title: "Cancel", style: .default) { (action) in}
         let alertDestructiveAction = UIAlertAction.init(title: "Destructive", style: .destructive) { (action) in}
