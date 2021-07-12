@@ -14,7 +14,7 @@ class ViewController4: UIViewController {
     }
     
     @IBAction func didTapPushVC5Button(_ sender: Any) {
-        let fiveViewController = storyboard?.instantiateViewController(identifier: "ViewController5") as! ViewController5
+        guard let fiveViewController = storyboard?.instantiateViewController(identifier: String(describing: ViewController5.self)) as? ViewController5 else {return}
         navigationController?.pushViewController(fiveViewController, animated: true)
     }
 }
